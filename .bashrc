@@ -43,7 +43,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-force_color_prompt=yes
+#force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -56,12 +56,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-txtwht='\e[0;37m' # White
-
 if [ "$color_prompt" = yes ]; then
-    # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-    # PS1='\[\033[01;34m\]\W\[\033[1;33m\]⟫⟫⟫ \[\033[0;37m\]'
-    PS1="\[$(tput bold)\]\[$(tput setaf 6)\]\t \[$(tput setaf 2)\][\[$(tput setaf 3)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 3)\]\h \[$(tput setaf 6)\]\W\[$(tput setaf 2)\]]\[$(tput setaf 4)\]⟫ \[$(tput sgr0)\]"
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -120,6 +116,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# give me more colors in the terminal
+export TERM="xterm-256color"
+
+source ~/git/clone/.bash-git-prompt/gitprompt.sh
+source ~/.ssh/mount_this_ssh_linux.sh
+
 # added by Anaconda3 2.1.0 installer
 export PATH="/home/dchen/anaconda3/bin:$PATH"
 
@@ -128,16 +130,3 @@ export LENSDIR=~/code/Lens      # or wherever Lens is installed
 export HOSTTYPE=x86_64-linux    # same as above during make
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${LENSDIR}/Bin/${HOSTTYPE}
 export PATH=${PATH}:${LENSDIR}/Bin/${HOSTTYPE}
-
-#HADOOP VARIABLES START
-export JAVA_HOME=/usr/lib/jvm/java-8-oracle/
-export HADOOP_INSTALL=/usr/local/hadoop
-export PATH=$PATH:$HADOOP_INSTALL/bin
-export PATH=$PATH:$HADOOP_INSTALL/sbin
-export HADOOP_MAPRED_HOME=$HADOOP_INSTALL
-export HADOOP_COMMON_HOME=$HADOOP_INSTALL
-export HADOOP_HDFS_HOME=$HADOOP_INSTALL
-export YARN_HOME=$HADOOP_INSTALL
-export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_INSTALL/lib/native
-export HADOOP_OPTS="-Djava.library.path=$HADOOP_INSTALL/lib"
-#HADOOP VARIABLES END
