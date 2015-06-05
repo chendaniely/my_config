@@ -22,6 +22,12 @@
 ;;;;; elpy
 (package-initialize)
 (elpy-enable)
+
+;;;;; jedi
+;; taken from: http://tkf.github.io/emacs-jedi/latest/
+(add-hook 'python-mode-hook 'jedi:setup)
+(setq jedi:complete-on-dot t)                 ; optional
+
 ;;;;; shinx doc
 (add-hook 'python-mode-hook (lambda ()
 			      (require 'sphinx-doc)
