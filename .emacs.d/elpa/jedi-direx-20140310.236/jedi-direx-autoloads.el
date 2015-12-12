@@ -1,10 +1,10 @@
 ;;; jedi-direx-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-
+(add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads (jedi-direx:setup jedi-direx:switch-to-buffer jedi-direx:pop-to-buffer)
-;;;;;;  "jedi-direx" "jedi-direx.el" (21871 42925 506774 85000))
+;;;### (autoloads nil "jedi-direx" "jedi-direx.el" (22108 61612 466134
+;;;;;;  521000))
 ;;; Generated autoloads from jedi-direx.el
 
 (autoload 'jedi-direx:pop-to-buffer "jedi-direx" "\
@@ -24,16 +24,9 @@ Add it to `jedi-mode-hook' to use jedi-direx.
 
 ;;;***
 
-;;;### (autoloads nil nil ("jedi-direx-pkg.el") (21871 42925 518895
-;;;;;;  177000))
-
-;;;***
-
-(provide 'jedi-direx-autoloads)
 ;; Local Variables:
 ;; version-control: never
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
-;; coding: utf-8
 ;; End:
 ;;; jedi-direx-autoloads.el ends here
