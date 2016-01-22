@@ -6,6 +6,7 @@
   (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
   (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
   (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
+  (add-to-list 'package-archives '("elpy" . "https://jorgenschaefer.github.io/packages/"))
  )
 
 ;;;;; additional load-path
@@ -27,7 +28,7 @@
 (add-hook 'python-mode-hook (lambda () (highlight-indentation-mode 1)))
 
 ;;;;; elpy
-(package-initialize)
+;(package-initialize)
 (elpy-enable)
 (setq elpy-rpc-backend "jedi")
 
