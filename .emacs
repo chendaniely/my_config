@@ -4,6 +4,12 @@
   (package-initialize)
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
   )
+
+;;;;; Load all the packages!
+(add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t) ; Org-mode's repository
+
 ;;;;; additional load-path
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
@@ -16,8 +22,8 @@
 (setq inhibit-startup-screen t)
 
 ;;;;; Org mode packages
-(require 'package)
-(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+;(require 'package)
+;(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
 
 ;;;;;;;;;; PYTHON
 (add-hook 'python-mode-hook (lambda () (highlight-indentation-mode 1)))
