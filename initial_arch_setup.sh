@@ -7,4 +7,4 @@ pacaur -Syyua emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas
     base-devel xf86-input-synaptics \
     lxc arch-install-scripts \
     synology-cloud-station-drive \
-    firefox chromium google-chrome-beta vivaldi \
+    firefox chromium google-chrome-beta vivaldi
