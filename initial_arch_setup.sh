@@ -11,4 +11,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     lxc arch-install-scripts \
     synology-cloud-station-drive \
     firefox chromium google-chrome-beta vivaldi \
-    htop
+    htop \
+    pkgbuild-introspection
