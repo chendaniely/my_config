@@ -20,7 +20,7 @@
 ;;;;; disable startup splash screen
 (setq inhibit-startup-screen t)
 
-(global-nlinum-mode t) ;; enable nline numbers globally
+;(global-nlinum-mode t) ;; enable nline numbers globally
 
 ;; Standard el-get setup
 ;; (See also: https://github.com/dimitri/el-get#basic-setup)
@@ -176,7 +176,9 @@
 
 ;;;;; custom keybindings
 ; bind M-n to nlinum-mode
-(global-set-key (kbd "M-n") 'nlinum-mode)
+; (global-set-key (kbd "M-n") 'nlinum-mode)
+; bind M-n to linum-mode
+(global-set-key (kbd "M-n") 'linum-mode)
 ; bind M-p to list-packages
 (global-set-key (kbd "M-p") 'list-packages)
 
