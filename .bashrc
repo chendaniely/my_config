@@ -75,7 +75,7 @@ export TERM="xterm-256color"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# added by Anaconda3 2.2.0 installer
+# added by Anaconda installer
 export PATH="/home/dchen/anaconda3/bin:$PATH"
 
 # LENS
