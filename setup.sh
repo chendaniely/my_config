@@ -16,5 +16,10 @@ cp emacs.service ~/.config/systemd/user/
 systemctl --user enable emacs
 systemctl --user start emacs
 
+mkdir -p ~/git/vbi/sdal
+cd ~/git/vbi/sdal
+git clone git@github.com:dads2busy/sdal_configs.git
+cd sdal_configs
+bash ./setup.sh chend
 
-echo "Done."
+echo "Done. Still may need to setup SSH keys for SDAL"
