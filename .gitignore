@@ -1,0 +1,5 @@
+*~
+
+# ignore emacs stuff
+auto-save-list/*
+.emacs.d/ac-comphist.dat
