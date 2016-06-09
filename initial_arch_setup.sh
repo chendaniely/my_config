@@ -14,4 +14,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     synology-cloud-station-drive \
     firefox chromium google-chrome-beta vivaldi \
     htop \
-    pkgbuild-introspection
+    pkgbuild-introspection\
+    ntfs-3g
