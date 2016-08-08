@@ -66,7 +66,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-PS1='[\u@\h \W]\$ '
+# PS1='[\u@\h \W]\$ '
+#export PS1="\[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 # give me more colors in the terminal
 export TERM="xterm-256color"
