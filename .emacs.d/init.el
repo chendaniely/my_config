@@ -14,13 +14,14 @@
 
 ;;;;; load bash $PATH variables
 ;;;;;;;;;; https://samrelton.wordpress.com/2013/09/26/emacs-and-anaconda-python/
-(defun set-exec-path-from-shell-PATH ()
-        (interactive)
-        (let ((path-from-shell (replace-regexp-in-string "^.*\n.*shell\n" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
-        (setenv "PATH" path-from-shell)
-        (setq exec-path (split-string path-from-shell path-separator))))
+;; (defun set-exec-path-from-shell-PATH ()
+;;         (interactive)
+;;         (let ((path-from-shell (replace-regexp-in-string "^.*\n.*shell\n" "" (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+;;         (setenv "PATH" path-from-shell)
+;;         (setq exec-path (split-string path-from-shell path-separator))))
 
-(set-exec-path-from-shell-PATH)
+;; (set-exec-path-from-shell-PATH)
+;; (exec-path-from-shell-initialize)
 
 ;;;; General emacs
 (setq c-basic-offset 4)       ; indents 4 chars
@@ -56,6 +57,11 @@
 ;; Then open Python file.
 
 
+;; neotree
+;; https://github.com/jaypei/emacs-neotree
+(add-to-list 'load-path "/some/path/neotree")
+(require 'neotree)
+(global-set-key [f8] 'neotree-toggle)
 
 
 ;;;;; Org mode packages
