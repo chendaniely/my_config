@@ -1,6 +1,5 @@
 alias open='xdg-open'
 alias glog='git log --oneline --graph --all --decorate'
-alias docker='sudo docker'
 
 alias clean='rm .*~'
 
@@ -21,11 +20,6 @@ alias egrep='egrep --color=auto'
 # Aliases used for SDAL
 ################################################################################
 alias vbi='cd ~/git/vbi'
-
-alias mann='cd ~/git/vbi/multi-agent-neural-network && source activate mann'
-alias mdme='cd ~/git/vbi/multidisciplinary-diffusion-model-experiments && source activate mann'
-
-alias wos='cd ~/git/vbi && source activate wos2'
 
 
 function rs {
