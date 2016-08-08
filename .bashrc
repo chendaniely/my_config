@@ -85,3 +85,7 @@ export LENSDIR=~/code/Lens      # or wherever Lens is installed
 export HOSTTYPE=x86_64-linux    # same as above during make
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${LENSDIR}/Bin/${HOSTTYPE}
 export PATH=${PATH}:${LENSDIR}/Bin/${HOSTTYPE}
+
+# ruby gems
+export PATH="$PATH:/home/dchen/.gem/ruby/2.3.0/bin"
+
