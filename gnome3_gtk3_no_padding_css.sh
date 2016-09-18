@@ -1,3 +1,7 @@
+# taken from http://blog.samalik.com/make-your-gnome-title-bar-smaller-fedora-24-update/
+# this script will create a css file that will remove the title bar padding
+# in gnome 3
+
 echo "window.ssd headerbar.titlebar {
     padding-top: 4px;
     padding-bottom: 4px;
