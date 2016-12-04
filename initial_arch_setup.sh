@@ -12,7 +12,7 @@ reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 # intel-advisor-xe \
 pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas intel-mkl r-mkl \
     git git-cola gitkraken \
-    base-devel xf86-input-synaptics \
+    base-devel \
     lxc arch-install-scripts \
     synology-cloud-station-drive \
     firefox chromium google-chrome-beta vivaldi \
