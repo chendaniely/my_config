@@ -21,4 +21,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     ntfs-3g \
     anaconda \
     texlive-most \
-    telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop
+    telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop \
+    obs-studio kdenlive
