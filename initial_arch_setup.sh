@@ -19,4 +19,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     htop guake \
     pkgbuild-introspection \
     ntfs-3g \
-    anaconda
+    anaconda \
+    texlive-most
