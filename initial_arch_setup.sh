@@ -1,11 +1,13 @@
 sudo mount -o remount,size=16G,noatime /tmp
 
+# might need to run `gpg --recv-keys <key>`
+# this gpg key is for pacaur
+gpg --recv-keys 1EB2638FF56C0C53
+
 yaourt -Syyua pacaur reflector
 
+# fast mirrors
 reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
-
-# might need to run `gpg --recv-keys <key>`
-# `gpg --recv-keys 1EB2638FF56C0C53`
 
 pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas intel-mkl r-mkl intel-advisor-xe \
     git git-cola gitkraken \
@@ -14,5 +16,6 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     synology-cloud-station-drive \
     firefox chromium google-chrome-beta vivaldi \
     htop \
-    pkgbuild-introspection\
-    ntfs-3g
+    pkgbuild-introspection \
+    ntfs-3g \
+    anaconda
