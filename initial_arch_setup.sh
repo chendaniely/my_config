@@ -20,4 +20,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     pkgbuild-introspection \
     ntfs-3g \
     anaconda \
-    texlive-most
+    texlive-most \
+    telegram-desktop-bin thunderbird
