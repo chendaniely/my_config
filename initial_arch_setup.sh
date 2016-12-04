@@ -9,7 +9,8 @@ yaourt -Syyua pacaur reflector
 # fast mirrors
 reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
-pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas intel-mkl r-mkl intel-advisor-xe \
+pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas intel-mkl r-mkl \
+    # intel-advisor-xe \
     git git-cola gitkraken \
     base-devel xf86-input-synaptics \
     lxc arch-install-scripts \
