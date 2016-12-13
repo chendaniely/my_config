@@ -22,4 +22,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     anaconda \
     texlive-most \
     telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop \
-    obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc
+    obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc \
+    lm_sensors
