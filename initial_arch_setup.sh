@@ -24,4 +24,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop \
     obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc \
     lm_sensors \
-    unixodbc
+    unixodbc \
+    libselinux
