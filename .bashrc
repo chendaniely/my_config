@@ -78,7 +78,10 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # added by Anaconda installer
-export PATH="/home/dchen/anaconda3/bin:$PATH"
+# export PATH="/home/dchen/anaconda3/bin:$PATH"
+
+# manually enable anaconda
+alias ea="source ~/anaconda3/bin/activate root"
 
 # LENS
 export LENSDIR=~/code/Lens      # or wherever Lens is installed
