@@ -25,4 +25,5 @@ pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas 
     obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc \
     lm_sensors \
     unixodbc \
-    libselinux
+    libselinux \
+    aspell-en
