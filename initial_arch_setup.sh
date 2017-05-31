@@ -9,21 +9,27 @@ yaourt -Syyua pacaur reflector
 # fast mirrors
 reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
+sudo pacman -Syyu emacs r gcc-fortran gcc clang texlive-most git base-devel
+
 # intel-advisor-xe \
-pacaur -Syyu emacs r gcc-fortran rstudio-desktop-preview-bin emacs-ess openblas intel-mkl r-mkl \
-    git git-cola gitkraken \
-    base-devel \
-    lxc arch-install-scripts \
+# lxc \
+# anaconda \
+# telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop \
+# obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc \
+pacaur -Syyu openblas intel-mkl r-mkl  \
+    emacs-ess \
+    git-cola gitkraken \
+    arch-install-scripts \
     synology-cloud-station-drive \
     firefox chromium google-chrome-beta vivaldi \
     htop guake \
     pkgbuild-introspection \
     ntfs-3g \
-    anaconda \
     texlive-most \
-    telegram-desktop-bin thunderbird thunderbird-lightning-bin slack-desktop \
-    obs-studio kdenlive ffmpeg imagemagick dvdauthor vlc \
     lm_sensors \
     unixodbc \
     libselinux \
     aspell-en
+
+# r-mkl
+yaourt -Syyua rstudio-desktop-preview-bin intel-mkl microsoft-r-open
