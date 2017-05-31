@@ -1,3 +1,5 @@
+# from: https://forum.antergos.com/topic/6984/error-with-antergos-keyring/13
+
 sudo pacman -Scc  <-- reply with explicit y to the first question
 sudo pacman -Syy
 sudo pacman -S haveged
