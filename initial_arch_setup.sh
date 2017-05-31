@@ -9,7 +9,7 @@ yaourt -Syyua pacaur reflector
 # fast mirrors
 reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
-sudo pacman -Syyu emacs r gcc-fortran gcc clang texlive-most git base-devel
+sudo pacman -Syyu emacs r gcc-fortran gcc clang texlive-most git svn base-devel
 
 # intel-advisor-xe \
 # lxc \
