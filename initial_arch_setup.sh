@@ -10,7 +10,8 @@ yaourt -Syyua pacaur reflector
 reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 sudo pacman -Syyu emacs r gcc-fortran gcc clang texlive-most git svn base-devel \
-    sublime-text-dev
+    sublime-text-dev \
+    postgresql-libs
 
 # intel-advisor-xe \
 # lxc \
