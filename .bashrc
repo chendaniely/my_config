@@ -66,9 +66,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+# Git prompt
+source /usr/share/git/completion/git-prompt.sh
+
+# Git bash completion
+source /usr/share/git/completion/git-completion.bash
+
 # PS1='[\u@\h \W]\$ '
 #export PS1="\[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-export PS1="\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1='\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[\033[38;5;6m\][\w]\[\033[38;5;15m\] $(__git_ps1 " (%s)") \n[\t] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
 
 # give me more colors in the terminal
 export TERM="xterm-256color"
@@ -91,4 +97,7 @@ export PATH=${PATH}:${LENSDIR}/Bin/${HOSTTYPE}
 
 # ruby gems
 export PATH="$PATH:/home/dchen/.gem/ruby/2.3.0/bin"
+export PATH="$PATH:/home/dchen/.gem/ruby/2.4.0/bin"
 
+# added by travis gem
+[ -f /home/dchen/.travis/travis.sh ] && source /home/dchen/.travis/travis.sh
