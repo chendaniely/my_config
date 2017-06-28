@@ -12,3 +12,5 @@
 	summary = true
 [gui]
 	editor = emacs
+[alias]
+	l = log --oneline --graph --decorate --all

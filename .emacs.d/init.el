@@ -48,8 +48,8 @@
 
 
 ;; Standard Jedi.el setting
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)
+;(add-hook 'python-mode-hook 'jedi:setup)
+;(setq jedi:complete-on-dot t)
 
 ;; Type:
 ;;     M-x el-get-install RET jedi RET
@@ -73,28 +73,28 @@
 
 ;;;;; elpy
 ;(package-initialize)
-(elpy-enable)
-(setq elpy-rpc-backend "jedi")
-(elpy-use-ipython)
+;(elpy-enable)
+;(setq elpy-rpc-backend "jedi")
+;(elpy-use-ipython)
 
 ;;;;; jedi
 ;; taken from: http://tkf.github.io/emacs-jedi/latest/
-(add-hook 'python-mode-hook 'jedi:setup)
-(setq jedi:complete-on-dot t)                 ; optional
+;(add-hook 'python-mode-hook 'jedi:setup)
+;(setq jedi:complete-on-dot t)                 ; optional
 
 ;;;;; enable autopep8
-(require 'py-autopep8)
-(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
+;(require 'py-autopep8)
+;(add-hook 'elpy-mode-hook 'py-autopep8-enable-on-save)
 
 ;;;;; use flycheck instead of flymake
-(when (require 'flycheck nil t)
-  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
-  (add-hook 'elpy-mode-hook 'flycheck-mode))
+;(when (require 'flycheck nil t)
+;  (setq elpy-modules (delq 'elpy-module-flymake elpy-modules))
+;  (add-hook 'elpy-mode-hook 'flycheck-mode))
 
 ;;;;; shinx doc
-(add-hook 'python-mode-hook (lambda ()
-			      (require 'sphinx-doc)
-			      (sphinx-doc-mode t)))
+;(add-hook 'python-mode-hook (lambda ()
+;			      (require 'sphinx-doc)
+;			      (sphinx-doc-mode t)))
 
 ;;;;; anaconda-mode
 ; (add-hook 'python-mode-hook 'anaconda-mode)
@@ -245,6 +245,9 @@
      ("#A41F99" . 85)
      ("#49483E" . 100))))
  '(magit-diff-use-overlays nil)
+ '(package-selected-packages
+   (quote
+    (zenburn-theme yaml-mode virtualenv swiper stan-snippets sphinx-doc revive python-mode python-docstring python-cell pyimpsort py-import-check py-autopep8 polymode org2jekyll org-toc org-protocol-jekyll org-plus-contrib org-pdfview org-pandoc org-jekyll org-beautify-theme org-ac nose nlinum neotree monokai-theme matlab-mode material-theme markdown-toc magit load-theme-buffer-local json-rpc jedi-direx flyspell-popup flymake-python-pyflakes flycheck exec-path-from-shell ess-R-object-popup ess-R-data-view elpy ein cython-mode company-ess company-auctex column-marker column-enforce-mode color-theme-buffer-local color-theme bash-completion auto-complete-rst auto-complete-auctex anaconda-mode)))
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
  '(scroll-bar-mode nil)
