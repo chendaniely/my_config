@@ -69,9 +69,11 @@ fi
 # Git prompt / Git bash completion
 if [ -f /usr/share/git/completion/git-completion.bash ]; then
     source /usr/share/git/completion/git-completion.bash
-elif [ -f /usr/share/git/completion/git-prompt.sh ]; then
+fi
+if [ -f /usr/share/git/completion/git-prompt.sh ]; then
     source /usr/share/git/completion/git-prompt.sh
-elif [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
+fi
+if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
     # centos
     source /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
