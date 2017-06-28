@@ -73,6 +73,10 @@ source /usr/share/git/completion/git-prompt.sh
 source /usr/share/git/completion/git-completion.bash
 source /usr/share/git/completion/git-prompt.sh
 
+# Git bash completion in CentOS
+source /usr/share/git-core/contrib/completion/git-completion.tcsh
+source /usr/share/git-core/contrib/completion/git-prompt.sh
+
 # PS1='[\u@\h \W]\$ '
 #export PS1="\[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 export PS1='\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[\033[38;5;6m\][\w]\[\033[38;5;15m\] $(__git_ps1 " (%s)") \n[\t] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
