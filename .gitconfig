@@ -1,0 +1,14 @@
+[user]
+	email = Maveri2k@yahoo.com
+	name = Daniel Chen
+[core]
+	editor = nano -w
+[color]
+	ui = auto
+[cola]
+	spellcheck = false
+[merge]
+	diffstat = true
+	summary = true
+[gui]
+	editor = emacs

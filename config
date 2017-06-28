@@ -1,0 +1,9 @@
+Host lightfoot
+    HostName lightfoot.vbi.vt.edu
+    User chend
+    IdentityFile /home/dchen/.ssh/id_rsa
+
+Host snowmane
+    HostName snowmane.vbi.vt.edu
+    User chend
+    IdentityFile /home/dchen/.ssh/id_rsa
