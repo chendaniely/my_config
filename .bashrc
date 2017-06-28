@@ -76,6 +76,8 @@ source /usr/share/git/completion/git-completion.bash
 #export PS1="\[\033[38;5;6m\][\w]\[\033[38;5;15m\]\n[\t] \[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 export PS1='\[\033[38;5;11m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\h\[$(tput sgr0)\] \[\033[38;5;6m\][\w]\[\033[38;5;15m\] $(__git_ps1 " (%s)") \n[\t] \[$(tput sgr0)\]\[\033[38;5;11m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]'
 
+LS_COLORS=$LS_COLORS:'di=1;94:' ; export LS_COLORS
+
 # give me more colors in the terminal
 export TERM="xterm-256color"
 
