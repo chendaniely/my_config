@@ -11,7 +11,8 @@ reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 sudo pacman -Syyu emacs r gcc-fortran gcc clang texlive-most git svn base-devel \
     sublime-text-dev \
-    postgresql-libs
+    postgresql-libs \
+    ruby
 
 # intel-advisor-xe \
 #<<<<<<< HEAD
@@ -49,3 +50,8 @@ pacaur -Syyu openblas intel-mkl r-mkl  \
 
 # r-mkl
 yaourt -Syyua rstudio-desktop-preview-bin intel-mkl microsoft-r-open
+
+
+# jekyll for blog stuff
+gem update
+gem install jekyll
