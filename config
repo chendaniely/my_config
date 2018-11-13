@@ -7,3 +7,8 @@ Host snowmane
     HostName snowmane.vbi.vt.edu
     User chend
     IdentityFile /home/dchen/.ssh/id_rsa
+
+Host sdad
+	HostName sdad.policy-analytics.net
+	User chend
+	IdentityFile ~/.ssh/id_rsa
