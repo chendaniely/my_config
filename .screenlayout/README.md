@@ -1,0 +1,1 @@
+Monitor settings for ARandR
