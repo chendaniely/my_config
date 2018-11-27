@@ -12,6 +12,10 @@ brew cask install java
 brew cask install r --with-java --with-openblas
 brew install homebrew/cask-versions/rstudio-preview
 
+# get devtools package in r
+brew install libgit2
+brew install jq
+
 #==> openblas
 #openblas is keg-only, which means it was not symlinked into /usr/local,
 #because macOS provides BLAS and LAPACK in the Accelerate framework.
