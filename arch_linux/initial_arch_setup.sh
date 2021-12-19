@@ -1,3 +1,7 @@
+## needed for texlive install if not already in .bashrc
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 AUR_HELPER=yay # set your aur helper (e.g., yay, paru, pacaur, etc)
 
 ## if sudo password is not being recognized after log in
