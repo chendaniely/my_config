@@ -32,6 +32,6 @@ $AUR_HELPER -Syu obs-studio kdenlive ffmpeg imagemagick vlc
 sudo pacman -Syu docker
 sudo systemctl start docker.service
 sudo systemctl enable docker.service
-docker info
+sudo docker info
 ## Download lastest arch linux image and run hello world
-docker run -it --rm archlinux:base-devel bash -c "echo hello world"
+sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
