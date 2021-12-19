@@ -25,7 +25,7 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     synology-drive
     
 $AUR_HELPER -Syu emacs-ess
-sudo pacman -Syu texlive-most texlive-lang texlive-langextra texlive-bibextra texlive-fontsextra biber
+sudo pacman -Syu texlive-most texlive-lang texlive-langextra texlive-bibtexextra texlive-fontsextra biber
 $AUR_HELPER -Syu obs-studio kdenlive ffmpeg imagemagick vlc
 
 ## Docker
