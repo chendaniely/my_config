@@ -15,6 +15,7 @@ brew install --cask emacs vscodium
 ## brew install other stuff
 
 brew install homebrew/cask-versions/firefox-developer-edition
+brew install --cask google-chrome
 brew install --cask iterm2
 # install screen recorder
 brew install --cask kap
