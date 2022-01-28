@@ -26,6 +26,9 @@ brew install --cask alt-tab
 brew install --cask keycastr
 
 brew install --cask spotify slack thunderbird
+brew install --cask obsidian
+brew install syncthing
+
 
 sudo softwareupdate --install-rosetta
 brew install --cask microsoft-teams
