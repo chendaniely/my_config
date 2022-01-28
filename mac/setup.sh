@@ -29,6 +29,7 @@ brew install --cask spotify slack thunderbird
 brew install --cask obsidian
 brew install --cask syncthing
 brew install syncthing
+brew install --cask toggl-track
 
 
 sudo softwareupdate --install-rosetta
