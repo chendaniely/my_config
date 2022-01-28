@@ -6,31 +6,32 @@ brew update
 brew cleanup
 brew upgrade
 
+# install xcode
+xcode-select --install
+
 # text editors
-brew --cask install emacs vscodium
+brew install --cask emacs vscodium
 
-# r stuff
-brew cask install java
-brew cask install r --with-java --with-openblas
-brew install homebrew/cask-versions/rstudio-preview
+## brew install other stuff
 
-# get devtools package in r
-brew install libgit2
-brew install jq
+brew install --cask firefox-developer-edition
+# install screen recorder
+brew install --cask kap
+# window manager
+brew install --cask rectangle
+# previews to window switcher
+brew install --cask alt-tab
+# show key presses
+brew install --cask keycastr
 
-#==> openblas
-#openblas is keg-only, which means it was not symlinked into /usr/local,
-#because macOS provides BLAS and LAPACK in the Accelerate framework.
-#
-#For compilers to find openblas you may need to set:
-#  export LDFLAGS="-L/usr/local/opt/openblas/lib"
-#  export CPPFLAGS="-I/usr/local/opt/openblas/include"
-#
-#For pkg-config to find openblas you may need to set:
-#  export PKG_CONFIG_PATH="/usr/local/opt/openblas/lib/pkgconfig"
+brew install --cask spotify slack thunderbird
 
-# docker
-brew cask install docker
+sudo softwareupdate --install-rosetta
+brew install --cask microsoft-teams
 
-# utils
+# programming things
+
 brew install git
+brew install docker docker-compose
+brew install node
+
