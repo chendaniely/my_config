@@ -47,4 +47,4 @@ brew install --cask obs
 brew install git
 brew install docker docker-compose
 brew install node
-
+brew install gcc
