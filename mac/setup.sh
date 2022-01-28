@@ -27,6 +27,7 @@ brew install --cask keycastr
 
 brew install --cask spotify slack thunderbird
 brew install --cask obsidian
+brew install --cask syncthing
 brew install syncthing
 
 
