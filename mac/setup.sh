@@ -15,6 +15,7 @@ brew install --cask emacs vscodium
 ## brew install other stuff
 
 brew install --cask firefox-developer-edition
+brew install --cask iterm2
 # install screen recorder
 brew install --cask kap
 # window manager
