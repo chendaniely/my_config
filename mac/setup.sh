@@ -33,6 +33,12 @@ brew install syncthing
 
 sudo softwareupdate --install-rosetta
 brew install --cask microsoft-teams
+brew install --cask zotero
+brew install --cask mactex
+brew install --cask texstudio
+brew install --cask ferdi
+brew install --cask discord
+brew install --cask obs
 
 # programming things
 
