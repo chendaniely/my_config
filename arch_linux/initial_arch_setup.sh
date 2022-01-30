@@ -1,6 +1,14 @@
 ## needed for texlive install if not already in .bashrc
-export LANG=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+#export LANG=en_US.UTF-8
+#export LC_ALL=en_US.UTF-8
+
+sudo pacman -Syyuu --noconfirm --needed base-devel
+
+sudo pacman -S --noconfirm git
+mkdir -p git/aur
+cd git/aur
+git clone https://aur.archlinux.org/yay.git
+cd yay
 
 AUR_HELPER=yay # set your aur helper (e.g., yay, paru, pacaur, etc)
 
@@ -9,9 +17,9 @@ AUR_HELPER=yay # set your aur helper (e.g., yay, paru, pacaur, etc)
 # systemctl start systemd-homed
 
 ## update keyring to start
-sudo pacman -S archlinux-keyring
-sudo pacman -Syu --noconfirm
-$AUR_HELPER -Syu --noconrirm
+#sudo pacman -S archlinux-keyring
+#sudo pacman -Syu --noconfirm
+$AUR_HELPER -Syu --noconfirm
 
 ## reflector to find fastest mirror
 #$AUR_HELPER -Syu reflector
@@ -25,7 +33,7 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     pandoc-bin \
     git-cola gitkraken \
     obsidian \
-    firefox chromium google-chrome-beta \
+    firefox-developer-edition chromium google-chrome \
     synology-drive \
     authy
     
