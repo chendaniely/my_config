@@ -25,7 +25,10 @@ brew install --cask rectangle
 brew install --cask alt-tab
 # show key presses
 brew install --cask keycastr
+
+# similar to alt-drag feature
 brew install --cask easy-move-plus-resize
+xattr -dr com.apple.quarantine /Applications/Easy\ Move+Resize.app
 
 brew install --cask spotify slack thunderbird
 brew install --cask obsidian
