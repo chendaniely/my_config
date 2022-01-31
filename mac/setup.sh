@@ -25,6 +25,7 @@ brew install --cask rectangle
 brew install --cask alt-tab
 # show key presses
 brew install --cask keycastr
+brew install --cask easy-move-plus-resize
 
 brew install --cask spotify slack thunderbird
 brew install --cask obsidian
