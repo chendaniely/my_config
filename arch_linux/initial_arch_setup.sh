@@ -54,3 +54,6 @@ sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
 $AUR_HELPER -Syu --noconfirm bluez bluez-utils bluedevil
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
+
+# messaging
+yay -Syu --noconfirm slack-desktop ferdi teams
