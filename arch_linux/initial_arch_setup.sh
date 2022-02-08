@@ -29,7 +29,7 @@ $AUR_HELPER -Syu --noconfirm
 $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn base-devel \
     emacs code \
     openblas intel-mkl \
-    r tk rstudio-desktop-daily-bin \
+    r tk rstudio-desktop-daily-bin quarto-cli-bin \
     pandoc-bin \
     git-cola gitkraken \
     obsidian \
@@ -57,3 +57,6 @@ sudo systemctl enable bluetooth.service
 
 # messaging
 yay -Syu --noconfirm slack-desktop ferdi teams
+
+# file sync
+yay -Syu --noconfirm synology-drive nextcloud
