@@ -48,3 +48,9 @@ sudo systemctl enable docker.service
 sudo docker info
 ## Download lastest arch linux image and run hello world
 sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
+
+# bluetooth
+# https://wiki.archlinux.org/title/bluetooth#Installation
+$AUR_HELPER -Syu --noconfirm bluez bluez-utils bluedevil
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
