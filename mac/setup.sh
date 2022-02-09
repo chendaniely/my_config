@@ -52,3 +52,6 @@ brew install git
 brew install docker docker-compose
 brew install node
 brew install gcc
+
+# paid things
+brew install --cask synergy
