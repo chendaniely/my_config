@@ -35,7 +35,8 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     obsidian \
     firefox-developer-edition chromium google-chrome \
     synology-drive \
-    authy
+    authy \
+    synergy
     
 $AUR_HELPER -Syu emacs-ess
 sudo pacman -Syu --noconfirm texlive-most texlive-lang texlive-langextra texlive-bibtexextra texlive-fontsextra biber
