@@ -41,6 +41,7 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     
 $AUR_HELPER -Syu emacs-ess
 sudo pacman -Syu --noconfirm texlive-most texlive-lang texlive-langextra texlive-bibtexextra texlive-fontsextra biber
+$AUR_HELPER -Syu --noconfirm texstudio zotero-beta 
 $AUR_HELPER -Syu --noconfirm obs-studio kdenlive ffmpeg imagemagick vlc
 
 ## Docker
