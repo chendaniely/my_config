@@ -64,3 +64,6 @@ yay -Syu --noconfirm slack-desktop ferdi teams
 
 # file sync
 yay -Syu --noconfirm synology-drive nextcloud
+
+# hp printer stuff
+# https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/392629
