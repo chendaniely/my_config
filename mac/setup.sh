@@ -60,8 +60,11 @@ echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 brew install openssl readline sqlite3 xz zlib
 # https://github.com/pyenv/pyenv/wiki#how-to-build-cpython-with---enable-shared
-$ env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.10:latest
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.10:latest
 # was getting --enabled-shared errors with reticulate
+python -m venv ~/.venv
+source .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel pandas jupyterlab jupyter
 
 # paid things
 brew install --cask synergy
