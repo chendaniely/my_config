@@ -53,5 +53,12 @@ brew install docker docker-compose
 brew install node
 brew install gcc
 
+## Python
+brew update
+brew install pyenv
+echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
+echo 'eval "$(pyenv init -)"' >> ~/.zshrc
+pyenv install 3.6.15
+
 # paid things
 brew install --cask synergy
