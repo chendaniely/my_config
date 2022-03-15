@@ -67,7 +67,7 @@ pyenv local 3.10.2
 mkdir -p ~/.venvs
 python -m venv ~/.venvs/base
 source ~/.venvs/base/bin/activate
-python -m pip install --upgrade pip setuptools wheel pandas jupyterlab jupyter
+python -m pip install --upgrade pip setuptools wheel pandas jupyterlab jupyter matplotlib
 
 # paid things
 brew install --cask synergy
