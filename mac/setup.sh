@@ -58,7 +58,10 @@ brew update
 brew install pyenv
 echo 'eval "$(pyenv init --path)"' >> ~/.zprofile
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
-pyenv install 3.6.15
+brew install openssl readline sqlite3 xz zlib
+# https://github.com/pyenv/pyenv/wiki#how-to-build-cpython-with---enable-shared
+$ env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.10:latest
+# was getting --enabled-shared errors with reticulate
 
 # paid things
 brew install --cask synergy
