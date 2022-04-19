@@ -27,7 +27,7 @@ $AUR_HELPER -Syu --noconfirm
 #reflector --verbose -l 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn base-devel \
-    emacs code code-marketplace \
+    emacs code code-marketplace code-features \
     openblas intel-mkl \
     r tk rstudio-desktop-daily-bin quarto-cli-bin \
     pandoc-bin \
