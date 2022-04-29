@@ -72,6 +72,7 @@ python -m pip install --upgrade pip setuptools wheel pandas jupyterlab jupyter m
 brew install pipx
 pipx ensurepath
 # restart
+pipx install black
 
 
 # paid things
