@@ -69,5 +69,20 @@ python -m venv ~/.venvs/base
 source ~/.venvs/base/bin/activate
 python -m pip install --upgrade pip setuptools wheel pandas jupyterlab jupyter matplotlib
 
+brew install pipx
+pipx ensurepath
+# restart
+
+
 # paid things
 brew install --cask synergy
+
+# vscode R
+# https://code.visualstudio.com/docs/languages/r
+Rscript -e 'install.packages("languageserver")'
+Rscript -e 'install.packages("rmarkdown")'
+pipx install radian
+Rscript -e 'remotes::install_github("ManuelHentschel/vscDebugger")'
+Rscript -e 'install.packages("httpgd")'
+# Enable r.plot.useHttpgd in VS Code settings.
+# VScode R plugin
