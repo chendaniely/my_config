@@ -45,9 +45,11 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     yakuake
 
 # power management
-yay -Syu --noconfirm tlp tp_smapi acpi_call
-sudo systemctl start tlp.service
-sudo systemctl enable tlp.service
+#yay -Syu --noconfirm tlp tp_smapi acpi_call
+#sudo systemctl start tlp.service
+#sudo systemctl enable tlp.service
+# https://www.reddit.com/r/archlinux/comments/rujhv0/best_power_management_solution/
+sudo pacman -Syu powertop
     
 $AUR_HELPER -Syu emacs-ess
 sudo pacman -Syu --noconfirm texlive-most texlive-lang texlive-langextra texlive-bibtexextra texlive-fontsextra biber
