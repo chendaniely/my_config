@@ -53,6 +53,10 @@ brew install docker docker-compose
 brew install node
 brew install gcc
 
+# used for ls group-directories-first
+# https://apple.stackexchange.com/questions/300615/group-directories-first-option-for-ls-command
+brew install coreutils
+
 ## Python
 brew update
 brew install pyenv
