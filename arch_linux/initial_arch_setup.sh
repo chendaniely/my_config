@@ -76,7 +76,7 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
 # messaging
-yay -Syu --noconfirm slack-desktop ferdium-bin teams
+yay -Syu --noconfirm slack-desktop ferdium-bin teams discord
 
 # file sync
 yay -Syu --noconfirm synology-drive nextcloud
