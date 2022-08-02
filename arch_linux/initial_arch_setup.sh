@@ -2,13 +2,16 @@
 #export LANG=en_US.UTF-8
 #export LC_ALL=en_US.UTF-8
 
-sudo pacman -Syyuu --noconfirm --needed base-devel
+## update keyring to start
+sudo pacman -Syyuu --noconfirm --needed base-devel archlinux-keyring
+sudo pacman -Syyuu --noconfirm
 
 sudo pacman -S --noconfirm git
 mkdir -p git/aur
 cd git/aur
 git clone https://aur.archlinux.org/yay.git
 cd yay
+makepkg -si --noconfirm
 
 AUR_HELPER=yay # set your aur helper (e.g., yay, paru, pacaur, etc)
 
@@ -16,9 +19,6 @@ AUR_HELPER=yay # set your aur helper (e.g., yay, paru, pacaur, etc)
 # systemctl status systemd-homed ## if this is anything other than active run:
 # systemctl start systemd-homed
 
-## update keyring to start
-#sudo pacman -S archlinux-keyring
-#sudo pacman -Syu --noconfirm
 $AUR_HELPER -Syu --noconfirm
 
 ## reflector to find fastest mirror
@@ -37,7 +37,7 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     synology-drive \
     authy \
     synergy \
-    atkinson-hyperlegible-fonts \
+    atkinson-hyperlegible-fonts ttf-fira-code \
     freeoffice \
     ark \
     peek \
@@ -50,10 +50,12 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
 #sudo systemctl enable tlp.service
 # https://www.reddit.com/r/archlinux/comments/rujhv0/best_power_management_solution/
 sudo pacman -Syu powertop
+# power
+# tlp: https://support.system76.com/articles/battery/
     
-$AUR_HELPER -Syu emacs-ess
+$AUR_HELPER -Syu --noconfirm emacs-ess
 sudo pacman -Syu --noconfirm texlive-most texlive-lang texlive-langextra texlive-bibtexextra texlive-fontsextra biber
-$AUR_HELPER -Syu --noconfirm texstudio zotero-beta 
+$AUR_HELPER -Syu --noconfirm texstudio zotero
 $AUR_HELPER -Syu --noconfirm obs-studio kdenlive ffmpeg imagemagick vlc
 
 ## Docker
@@ -64,6 +66,9 @@ sudo docker info
 ## Download lastest arch linux image and run hello world
 sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
 
+# python
+yay -Syu --no-confirm pyenv
+
 # bluetooth
 # https://wiki.archlinux.org/title/bluetooth#Installation
 $AUR_HELPER -Syu --noconfirm bluez bluez-utils bluedevil
@@ -71,7 +76,7 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 
 # messaging
-yay -Syu --noconfirm slack-desktop ferdi teams
+yay -Syu --noconfirm slack-desktop ferdium-bin teams
 
 # file sync
 yay -Syu --noconfirm synology-drive nextcloud
