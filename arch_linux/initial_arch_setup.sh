@@ -2,9 +2,12 @@
 #export LANG=en_US.UTF-8
 #export LC_ALL=en_US.UTF-8
 
-## update keyring to start
-sudo pacman -Syyuu --noconfirm --needed base-devel archlinux-keyring
+sudo pacman -Sy --noconfirm reflector
+sudo reflector -c CA -c US -p https --sort rate -l 50 > /etc/pacman.d/mirrorlist
 sudo pacman -Syyuu --noconfirm
+
+## update keyring to start
+sudo pacman -S --noconfirm --needed base-devel archlinux-keyring
 
 sudo pacman -S --noconfirm git
 mkdir -p git/aur
