@@ -42,7 +42,9 @@ $AUR_HELPER -Syu --noconfirm arch-install-scripts gcc-fortran gcc clang git svn 
     ark \
     peek \
     solaar \
-    yakuake
+    yakuake \
+    toggldesktop-bin \
+    nordvpn-bin
 
 # power management
 #yay -Syu --noconfirm tlp tp_smapi acpi_call
