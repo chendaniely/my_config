@@ -73,6 +73,22 @@ sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
 
 # python
 yay -Syu --no-confirm pyenv python-pipenv
+pyenv init
+#export PYENV_ROOT="$HOME/.pyenv"
+#command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+#eval "$(pyenv init -)"
+
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc
+echo 'command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+
+pyenv install --list | grep 3.10
+env PYTHON_CONFIGURE_OPTS="--enable-shared" pyenv install 3.10.6
+pyenv install --list | grep miniforge
+pyenv install miniforge3-4.10.3-10
 
 # bluetooth
 # https://wiki.archlinux.org/title/bluetooth#Installation
