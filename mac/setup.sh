@@ -36,6 +36,10 @@ brew install --cask syncthing
 brew install syncthing
 brew install --cask toggl-track
 
+# github things
+brew install gh
+brew install --cask github
+
 
 sudo softwareupdate --install-rosetta
 brew install --cask microsoft-teams
