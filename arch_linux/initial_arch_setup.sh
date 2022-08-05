@@ -72,7 +72,7 @@ sudo docker info
 sudo docker run -it --rm archlinux:base-devel bash -c "echo hello world"
 
 # python
-yay -Syu --no-confirm pyenv
+yay -Syu --no-confirm pyenv python-pipenv
 
 # bluetooth
 # https://wiki.archlinux.org/title/bluetooth#Installation
