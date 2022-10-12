@@ -95,3 +95,7 @@ Rscript -e 'remotes::install_github("ManuelHentschel/vscDebugger")'
 Rscript -e 'install.packages("httpgd")'
 # Enable r.plot.useHttpgd in VS Code settings.
 # VScode R plugin
+
+brew tap r-lib/rig
+brew install --cask rig
+rig add # install latest R
