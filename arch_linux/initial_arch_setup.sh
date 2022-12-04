@@ -153,3 +153,6 @@ yay -Syu --noconfirm \
     adobe-source-han-serif-otc-fonts \
     noto-fonts-cjk \
     ttf-ms-win10-auto
+
+# libreoffice
+yay -Syu libreoffice-fresh libreoffice-extension-writer2latex libreoffice-extension-texmaths ttf-caladea ttf-carlito ttf-dejavu ttf-gentium-basic ttf-liberation ttf-linux-libertine-g noto-fonts adobe-source-code-pro-fonts adobe-source-sans-fonts adobe-source-serif-fonts hunspell hunspell-en_us hunspell-en_ca
