@@ -145,3 +145,11 @@ yay -S yubikey-manager
 systemctl status pcscd.service
 systemctl start pcscd.service
 systemctl enable pcscd.service
+
+# fonts
+yay -Syu --noconfirm \
+    noto-fonts-emoji \
+    adobe-source-han-sans-otc-fonts \
+    adobe-source-han-serif-otc-fonts \
+    noto-fonts-cjk \
+    ttf-ms-win10-auto
