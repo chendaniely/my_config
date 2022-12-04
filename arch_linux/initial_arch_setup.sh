@@ -104,3 +104,44 @@ yay -Syu --noconfirm synology-drive nextcloud
 
 # hp printer stuff
 # https://unix.stackexchange.com/questions/359531/installing-hp-printer-driver-for-arch-linux/392629
+
+yay -Syu --noconfirm \
+    virtualbox \
+    virtualbox-host-modules-arch \
+    virtualbox-guest-iso \
+    virtualbox-ext-oracle
+sudo /sbin/vboxreload
+
+yay -Syu --noconfirm \
+    packagekit-qt5 \
+    qbittorrent \
+    thunderbird-nightly-bin
+# MOZ_ENABLE_WAYLAND=1 thunderbird-nightly
+
+yay -Syu --noconfirm \
+    docker-compose
+sudo usermod -aG docker $USER
+sudo systemctl restart docker.service
+
+# zoom + wayland
+yay -Syu --noconfirm \
+    zoom \
+    xdg-desktop-portal \
+    xdg-desktop-portal-kde
+# https://aur.archlinux.org/packages/zoom#comment-870919
+# QT_QPA_PLATFORM=xcb XDG_SESSION_TYPE=x11 nohup zoom %U
+
+yay -Syu --noconfirm \
+    synergy \
+    barrier
+
+# enable parallel downloads in pacman
+# sudo nano /etc/pacman.conf
+# set ParallelDownloads = 5
+
+# touch gestures
+
+yay -S yubikey-manager
+systemctl status pcscd.service
+systemctl start pcscd.service
+systemctl enable pcscd.service
